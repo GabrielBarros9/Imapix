@@ -1,0 +1,117 @@
+/* geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  color: #323232;
+  border: none;
+}
+
+input, label {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+a {
+  color: #E60084;
+}
+
+body {
+  background-image: url('../img/ima.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* form */
+#main-container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 150px;
+}
+
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  margin-right: 2.5%;
+}
+
+label {
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: .9rem;
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border-color: #E60084;
+}
+/*estilo do botão submit */
+input[type="submit"]{
+  width: 150px;
+  margin-left: 140px;
+  cursor: pointer;  
+  background: rgb(61, 157, 179);
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 20px;  
+  border: 1px solid #fff;   
+  margin-bottom: 10px;  
+  text-shadow: 0 1px 1px #333;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+ 
+  transition: all 0.2s linear;
+}
+input[type="submit"]:hover{
+  background: #4ab3c6;
+}
+#agreement {
+  margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+  display: inline-block;
+  width: auto;
+}
+
+.error-validation {
+  color: #ff1a1a;
+  position: absolute;
+  top: 57px;
+  font-size: 12px;
+}
+
+.template {
+  display: none;
+}
