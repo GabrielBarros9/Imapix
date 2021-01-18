@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
@@ -8,74 +9,26 @@
 </head>
 <body>
   
-  <div class="container">
-    <a class="links" id="paracadastro"></a>
-    <a class="links" id="paralogin"></a>
-     
-    <div class="content">      
-      <!--FORMULÁRIO DE LOGIN-->
-      <div id="login">
-        <form action="" method="POST"> 
-          <h1>Login</h1> 
-          <p> 
-            <label for="email">Endereço de e-mail</label>
-            <input id="email" name="email" required="required" type="text" placeholder="Campo obrigatório (Ex: contato@email.com)">
-          </p>
+  <div id="main-container">
+    <h1>Login</h1>
+    <form id="register-form" action="" method="POST">
+      <div class="full-box">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
+      <div class="half-box spacing">
+        <label for="senha">Senha</label>
+        <input id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="off">
            
           <p> 
-            <label for="senha">Inserir senha</label>
-            <input id="senha" name="senha" required="required" type="password" placeholder="Digite a senha">
-          </p>
-           
-          <p> 
+            <label class="manterlogado">Lembrar de mim</label>
             <input type="checkbox" name="manterlogado" id="manterlogado" value=""> 
-            <label for="manterlogado">Lembrar de mim</label>
           </p>
            
           <p> 
-          </p>
-           
-          <p class="link1">
-            Não tem conta?
-            <a href="#paracadastro">Cadastre-se</a>
-          </p>
-        
+          </p>        
         </form>
              <input onclick="logar()" type="submit" value="Logar">
       </div>
- 
-      <!--FORMULÁRIO DE CADASTRO-->
-      <div id="cadastro">
-        <form action="" method="POST"> 
-          <h1>Cadastro</h1> 
-           
-          <p> 
-            <label for="nome">Nome</label>
-            <input id="nome" name="nome" required="required" type="text" placeholder="Campo obrigatório">
-          </p>
-           
-          <p> 
-            <label for="email">Endereço de e-mail</label>
-            <input id="email" name="email" required="required" type="email" placeholder="Campo obrigatório (Ex: contato@email.com)">
-          </p>
-           
-          <p> 
-            <label for="senha">Inserir senha</label>
-            <input id="senha" name="senha" required="required" type="password" placeholder="Digite a senha">
-          </p>
-          <p> 
-            <label for="confirme">Inserir novamente</label>
-            <input id="confirme" name="confirme" required="required" type="password" placeholder="Digite a senha novamente">
-          <p> 
-            <input type="submit" value="Cadastrar"/> 
-          </p>
-           
-          <p class="link">  
-            Já tem conta?
-            <a href="#paralogin"> Ir para Login </a>
-          </p>
-        </form>
-      </div> 
     </div>
   </div>  
 </body>
