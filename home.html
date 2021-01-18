@@ -1,0 +1,58 @@
+<!DOCTYPE html>  
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+  </head>
+  <style>
+   
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+    .text {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 5rem;
+      color: #fff;
+      border: 3px solid #fff;
+      padding: 2rem 4rem;
+      margin-top: -700px;
+      
+    }   
+        .gradient {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background: linear-gradient(45deg, #084177, #687466, #cd8d7b, #fbc490);
+      background-size: 300% 300%;
+      animation: colors 15s ease infinite;
+    }
+    @keyframes colors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {                                                                                                                                               
+        background-position: 0% 50%;
+      }
+    }
+    @media (max-width: 600px) {
+      .text {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+      }
+    }
+  </style>
+  <body class="gradient">
+    <h1 class="text">IMAPIX</h1></a> 
+   
+  </body>
+</html>
