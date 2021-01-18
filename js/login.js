@@ -8,7 +8,7 @@ function logar(){
 	if(email.value == "admin@admin.com" && senha.value == "admin"){
 		localStorage.setItem("acesso", true);
 		alert("Usuario autenticado!");
-		window.location.href ="index.html";
+		window.location.href ="home.html";
 	}
 
 	else{
