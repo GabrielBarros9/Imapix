@@ -7,5 +7,5 @@ if(localStorage.getItem("acesso") == "true"){
 
 if(logado != true){
 	alert("Voce nao esta autenticado");
-	window.location.href = "index.html";
+	window.location.href = "login.html";
 }
